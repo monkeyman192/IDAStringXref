@@ -5,7 +5,7 @@ import ida_name
 CWD = op.dirname(__file__)
 
 matched = []
-with open(op.join(CWD, "matched.txt"), "r") as f:
+with open(op.join(CWD, "output", "matched.txt"), "r") as f:
     for line in f:
         _split = line.strip().split()
         if _split[0].startswith("sub_") and not _split[1].startswith("sub_"):
